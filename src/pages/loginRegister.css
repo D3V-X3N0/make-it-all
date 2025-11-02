@@ -1,0 +1,196 @@
+.auth-page { -webkit-text-size-adjust: 100%; }
+.auth-page * { box-sizing: border-box; }
+.auth-page {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px env(safe-area-inset-right) 16px env(safe-area-inset-left);
+
+  background: linear-gradient(90deg, #2e325d, #4b4fcc);
+  color: #eef1ff;
+}
+
+.auth-page #root { width: 100%; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px);
+    opacity: 0; 
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Card  */
+.login-container {
+  background: rgba(255,255,255,.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 1.25rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.24);
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid rgba(255,255,255,.12);
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Type */
+.registration-page h2{
+  text-align: center;
+  color: #eef1ff;
+  margin: 0 0 1rem;
+  text-shadow: none;
+  font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+}
+
+.welcome-message {
+  text-align: center;
+  color: rgba(238,241,255,.9);
+  margin-bottom: 0.75rem;
+  text-shadow: none;
+}
+
+.welcome-message h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 7vw, 2.5rem);
+  color: #eef1ff;
+}
+
+/* Form */
+.form-group { margin-bottom: 1rem; transition: all 0.3s ease; }
+.auth-page label{
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(238,241,255,.9);
+  font-weight: 600;
+  letter-spacing: .2px;
+  transition: color 0.3s ease;
+  font-size: clamp(0.9rem, 3.5vw, 1rem);
+}
+
+.auth-page input{
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.09);
+  color: #eef1ff;
+
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, background .2s, transform .06s;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+input::placeholder { color: rgba(238,241,255,.65); }
+
+input:focus {
+  border-color: rgba(120,140,255,.8);
+  box-shadow: 0 0 0 3px rgba(120,140,255,.25);
+  background: rgba(255,255,255,.12);
+}
+
+/* Buttons */
+.auth-page button{
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: clamp(1rem, 3.8vw, 1.05rem);
+  transition: transform .15s, box-shadow .15s, filter .15s;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+  touch-action: manipulation;
+}
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    filter: brightness(1.02);
+  }
+}
+
+/* Links */
+.forgot-password { text-align: center; margin-top: 1rem; }
+.forgot-password a {
+  color: rgba(180,195,255,.95);
+  text-decoration: none;
+  transition: color .2s, transform .15s;
+  display: inline-block;
+  font-size: clamp(0.95rem, 3.8vw, 1rem);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .forgot-password a:hover {
+    color: #eef1ff;
+    transform: translateY(-1px);
+  }
+}
+
+:focus-visible { outline: 3px solid rgba(120,140,255,.8); outline-offset: 2px; }
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 12px env(safe-area-inset-right) 12px env(safe-area-inset-left);
+  }
+
+  .main-container {
+    gap: 1rem;
+  }
+
+  .login-container {
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.18);
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .auth-page {
+    align-items: flex-start;
+  }
+
+  .main-container {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    gap: 2rem;
+  }
+
+  .login-container {
+    padding: 1.5rem;
+  }
+}

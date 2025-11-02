@@ -1,0 +1,37 @@
+.employee-content .employee-welcomeRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.employee-content .employee-gridOne {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.employee-content .employee-sectionTitle {
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+@media (max-width: 1200px) {
+  .employee-content .employee-welcomeRow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .employee-content .employee-welcomeRow > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .employee-content .employee-welcomeRow {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-content .employee-welcomeRow > :first-child {
+    grid-column: 1;
+  }
+}

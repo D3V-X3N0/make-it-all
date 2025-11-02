@@ -1,0 +1,287 @@
+.employee-content .employee-inlineForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+  padding-right: 8px;
+}
+
+.employee-content .employee-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  width: 100%;
+}
+
+.employee-content .employee-inlineForm .employee-btn {
+  padding: 10px 16px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+/* Filter buttons for project status */
+.employee-content .project-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.employee-content .filter-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.employee-content .filter-btn.active,
+.employee-content .filter-btn:hover {
+  background-color: #5865f2;
+}
+
+/* Responsive project card grid */
+.employee-content .project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.employee-content .project-card {
+  background-color: #2e325d;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.employee-content .project-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.employee-content .manager {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.employee-content .progress-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.employee-content .progress-bar {
+  background-color: #4b4fcc;
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.employee-content .progress-label {
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+/* Status badge colours */
+.employee-content .status-badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+.employee-content .status-badge.on-track {
+  background-color: #43b581;
+}
+
+.employee-content .status-badge.delayed {
+  background-color: #f1c40f;
+  color: #000;
+}
+
+.employee-content .status-badge.critical {
+  background-color: #f04747;
+}
+
+/* Team name container within project card */
+.employee-content .team-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Link to project details */
+.employee-content .view-btn {
+  margin-top: 10px;
+  background-color: #4b4fcc;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+}
+.employee-content .view-btn:hover {
+  background-color: #5865f2;
+}
+
+/* Project metadata */
+.employee-content .project-meta {
+  margin: 2px 0;
+  font-size: 13px;
+}
+.employee-content .muted {
+  color: var(--muted);
+}
+
+/* Tasks table */
+.employee-content .employee-tableWrap {
+  margin-top: 10px;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.employee-content .employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.employee-content .employee-table th,
+.employee-content .employee-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-content .employee-table th:nth-child(1),
+.employee-content .employee-table td:nth-child(1) {
+  width: 80px;
+  text-align: center;
+}
+
+.employee-content .employee-table th:nth-child(2),
+.employee-content .employee-table td:nth-child(2) {
+  width: 22%;
+}
+
+.employee-content .employee-table th:nth-child(3),
+.employee-content .employee-table td:nth-child(3) {
+  width: 32%;
+}
+
+.employee-content .employee-table th:nth-child(4),
+.employee-content .employee-table td:nth-child(4) {
+  width: 14%;
+}
+
+.employee-content .employee-table th:nth-child(5),
+.employee-content .employee-table td:nth-child(5) {
+  width: 240px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.employee-content .employee-table thead {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.employee-content .employee-table th {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.employee-content .employee-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.employee-content .employee-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.employee-content .employee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-content .employee-table td:last-child {
+  white-space: nowrap;
+}
+
+.employee-content .employee-table th:last-child {
+  text-align: center;
+}
+
+.employee-content .employee-table td .employee-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 8px;
+  margin: 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 70px;
+}
+
+.employee-content .employee-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.employee-content .employee-editBtn {
+  background: #5865f2;
+}
+
+.employee-content .employee-editBtn:not(:disabled):hover {
+  background: #4752c4;
+  box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
+  transform: translateY(-2px);
+}
+
+.employee-content .employee-deleteBtn {
+  background: #e24b4b;
+}
+
+.employee-content .employee-deleteBtn:not(:disabled):hover {
+  background: #d43d3d;
+  box-shadow: 0 4px 12px rgba(226, 75, 75, 0.4);
+  transform: translateY(-2px);
+}
+
+.tasks-page .employee-tableWrap,
+.tasks-page .employee-tableWrap:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.tasks-page .project-cards-container,
+.tasks-page .project-cards-container:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: none !important;
+}

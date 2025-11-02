@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/make-it-all/static/css/main.edd5ddb6.css",
+    "main.js": "/make-it-all/static/js/main.d689b1e6.js",
+    "index.html": "/make-it-all/index.html",
+    "main.edd5ddb6.css.map": "/make-it-all/static/css/main.edd5ddb6.css.map",
+    "main.d689b1e6.js.map": "/make-it-all/static/js/main.d689b1e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edd5ddb6.css",
+    "static/js/main.d689b1e6.js"
+  ]
+}

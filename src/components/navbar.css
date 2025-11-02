@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #2f3136;
+    border-bottom: 1px solid #202225;
+    padding: 16px 28px;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    color: #fff;
+}
+
+.menu-toggle {
+    background-color: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.menu-toggle:hover {
+    color: #b9bbbe;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar-container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    background-color: #202225;
+    height: calc(100vh - 60px);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}

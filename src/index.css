@@ -1,0 +1,83 @@
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+::-webkit-scrollbar{
+  width: 10px
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2f3136;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #202225;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #5865f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.75rem 0;
+}
+
+p {
+  margin: 0.25rem 0;
+}
+
+label {
+  color: inherit;
+  font-size: 0.95rem;
+}
+
+.main-container,
+.login-container,
+.content,
+.manage-projects-page,
+.project-details-page {
+  backdrop-filter: saturate(110%);
+}
+
+@import './theme.css';

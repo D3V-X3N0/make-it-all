@@ -1,0 +1,14 @@
+.chart {
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.08);
+    margin-top: 20px;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
