@@ -12,7 +12,6 @@ import Login from "./pages/loginPage";
 import Register from "./pages/registrationPage";
 import EmployeeHome from "./pages/employeeHome";
 import EmployeeTasks from "./pages/employeeTasks";
-import EmployeeChat from "./pages/employeeChat";
 import Iridescence from './components/iridescence';
 import "./index.css";
 
@@ -126,16 +125,7 @@ function App() {
               <EmployeeTasks />
             </PrivateRoute>
           }
-        />
-        <Route
-          path="/employee-chat"
-          element={
-            <PrivateRoute>
-              <EmployeeChat />
-            </PrivateRoute>
-          }
-        />
-      
+        />      
         <Route
           path="/employee-topics"
           element={

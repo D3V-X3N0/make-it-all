@@ -54,9 +54,6 @@ export default function Sidebar() {
                         <Link to="/employee-tasks" className={location.pathname === "/employee-tasks" ? "active" : ""}>
                             <HiOutlineFolder className="icon" /> Tasks
                         </Link>
-                        <Link to="/employee-chat" className={location.pathname === "/employee-chat" ? "active" : ""}>
-                            <HiOutlineChat className="icon" /> Team Chat
-                        </Link>
                         <Link to="/employee-topics" className={location.pathname === "/employee-topics" ? "active" : ""}>
                             <HiOutlineChatAlt2 className="icon" /> Topics
                         </Link>
