@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/make-it-all/static/css/main.b3a2aae6.css",
-    "main.js": "/make-it-all/static/js/main.358dc47b.js",
+    "main.js": "/make-it-all/static/js/main.2b27436c.js",
     "index.html": "/make-it-all/index.html",
     "main.b3a2aae6.css.map": "/make-it-all/static/css/main.b3a2aae6.css.map",
-    "main.358dc47b.js.map": "/make-it-all/static/js/main.358dc47b.js.map"
+    "main.2b27436c.js.map": "/make-it-all/static/js/main.2b27436c.js.map"
   },
   "entrypoints": [
     "static/css/main.b3a2aae6.css",
-    "static/js/main.358dc47b.js"
+    "static/js/main.2b27436c.js"
   ]
 }
