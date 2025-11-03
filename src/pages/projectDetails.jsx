@@ -138,7 +138,7 @@ export default function ProjectDetails() {
                     <select className="tasks-input" value={newTask.status} onChange={(e)=>setNewTask({...newTask, status:e.target.value})}>
                         {["Pending","In Progress","Completed"].map(s => <option key={s} value={s}>{s}</option>)}
                     </select>
-                    <button className="tasks-btn" onClick={addTask} disabled={!newTask.name.trim()}>Add Task</button>
+                    <button className="tasks-btn" onClick={addTask} disabled={!newTask.name.trim()}>Add</button>
                 </div>
 
                 <div className="table-wrap">

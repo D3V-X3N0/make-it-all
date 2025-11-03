@@ -14,13 +14,13 @@ function Topbar() {
         if (path.startsWith('/project-details')) return 'Project Details';
         if (path.startsWith('/employee-home')) return 'Home';
         if (path.startsWith('/employee-tasks')) return 'My Tasks';
-        if (path.startsWith('/employee-chat')) return 'Team Chat';
         switch (path) {
             case '/dashboard': return 'Dashboard';
             case '/manage-tasks': return 'Manage Tasks';
             case '/manage-projects': return 'Manage Projects';
             case '/topics': return 'Topics';
             case '/profile': return 'Profile';
+            case '/employee-topics': return 'Topics'
             default: return "Manager's Dashboard";
         }
     };

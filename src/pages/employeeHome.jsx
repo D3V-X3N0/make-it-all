@@ -66,7 +66,7 @@ export default function EmployeeHome() {
 
       <div className="employee-gridOne">
         <div className="employee-panel employee-announcementsPanel">
-          <div className="employee-panelTitle">Announcements</div>
+          <div className="employee-panelTitle">Topics</div>
           <ul className="employee-listGrid">
             <li className="employee-note">
               <div
@@ -104,7 +104,7 @@ export default function EmployeeHome() {
             </li>
           </ul>
           <button className="employee-btn employee-btn-full" disabled>
-            View all announcements
+            View all topics
           </button>
         </div>
       </div>

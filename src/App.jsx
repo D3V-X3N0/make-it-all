@@ -13,6 +13,7 @@ import Register from "./pages/registrationPage";
 import EmployeeHome from "./pages/employeeHome";
 import EmployeeTasks from "./pages/employeeTasks";
 import Iridescence from './components/iridescence';
+import AuroraBackground from "./components/auroraBackground.jsx";
 import "./index.css";
 
 function App() {

@@ -10,7 +10,7 @@ export default function Sidebar() {
     return (
         <aside className="sidebar">
             <div className="sidebar-top">
-                <h2>Task Hub</h2>
+                <h2>Make-It-All</h2>
             </div>
             <div className="sidebar-profile">
                 <HiOutlineUser className="user-icon" />
