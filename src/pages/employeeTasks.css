@@ -142,7 +142,7 @@
   color: var(--muted);
 }
 
-/* Tasks table */
+/* To-Do List */
 .employee-content .employee-tableWrap {
   margin-top: 10px;
   background: var(--panel);
@@ -152,47 +152,30 @@
 }
 
 .employee-content .employee-table {
+  display: table;
   width: 100%;
+  table-layout: auto;
   border-collapse: collapse;
-  table-layout: fixed;
+  border-spacing: 0;
 }
 
 .employee-content .employee-table th,
 .employee-content .employee-table td {
+  display: table-cell;
   padding: 14px 12px;
   text-align: left;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
   text-overflow: ellipsis;
+  vertical-align: middle;
 }
 
-.employee-content .employee-table th:nth-child(1),
-.employee-content .employee-table td:nth-child(1) {
-  width: 80px;
-  text-align: center;
-}
-
-.employee-content .employee-table th:nth-child(2),
-.employee-content .employee-table td:nth-child(2) {
-  width: 22%;
-}
-
-.employee-content .employee-table th:nth-child(3),
-.employee-content .employee-table td:nth-child(3) {
-  width: 32%;
-}
-
-.employee-content .employee-table th:nth-child(4),
-.employee-content .employee-table td:nth-child(4) {
-  width: 14%;
-}
-
-.employee-content .employee-table th:nth-child(5),
-.employee-content .employee-table td:nth-child(5) {
-  width: 240px;
-  text-align: center;
-  padding-left: 8px;
-  padding-right: 8px;
+.tasks-page .employee-table td:last-child,
+.tasks-page .employee-table th:last-child {
+  text-align: right !important;
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 32px !important;
 }
 
 .employee-content .employee-table thead {

@@ -26,21 +26,18 @@ const uniqueStatuses = Array.from(
       id: 1,
          title: "Design Dashboard Layout",
       description: "Refine grid and card spacing.",
-            due: "20/10/2025",
        done: false
     },
        {
      id: 2,
       title: "Implement login module",
      description: "Email+password with basic validation.",
-           due: "28/10/2025",
    done: true
        },
    {
     id: 3,
       title: "Prepare project report",
          description: "Draft weekly update for stakeholders.",
-         due: "01/11/2025",
      done: false
         }
   ];
@@ -140,15 +137,15 @@ const uniqueStatuses = Array.from(
          <input
          type="text"
              className="employee-input"
-             placeholder="Task title"
+             placeholder="To-Do title"
            />
               <input
           type="text"
            className="employee-input"
-               placeholder="Task description"
+               placeholder="To-Do description"
            />
          <button className="employee-btn" disabled style={{ minWidth: 110 }}>
-              Add Task
+              Add To-Do
             </button>
         </div>
          <div className="employee-tableWrap">
@@ -158,7 +155,6 @@ const uniqueStatuses = Array.from(
               <th>Done</th>
                  <th>Title</th>
              <th>Description</th>
-               <th>Due</th>
               <th>Actions</th>
              </tr>
            </thead>
@@ -177,7 +173,6 @@ const uniqueStatuses = Array.from(
              {task.title}
              </td>
            <td style={{ opacity: task.done ? 0.6 : 1 }}>{task.description}</td>
-            <td style={{ opacity: task.done ? 0.6 : 1 }}>{task.due}</td>
              <td>
              <button 
                  className="employee-btn employee-editBtn" 
